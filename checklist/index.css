@@ -1,0 +1,204 @@
+body {
+    margin: auto;
+    max-width: 800px;
+    background-image: url(./bg.svg);
+    background-repeat: repeat-y;
+    background-size: 100%;
+    color: #333;
+    font-family: sans-serif;
+}
+
+article {
+    margin: 10%;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+table {
+    width: 100%;
+}
+
+table td {
+    padding: 0.2rem;
+    border-bottom: dotted #ccc 3px;
+}
+
+.check {
+    font-weight: bold;
+    color: #484848;
+}
+
+table tr:first-of-type td {
+    border-top: dotted #ccc 3px;
+}
+
+table td img {
+    height: 1rem;
+}
+
+.ex p::before,
+table td:not(.check)::before,
+table td.check a::before {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+    content: '';
+
+    background-size: 100%;
+    background-position-y: center;
+
+}
+
+table td a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+table td a:hover {
+    color: #617589;
+    background: #f4f8ff;
+}
+
+.suggestion a {
+    display: flex;
+    border-radius: 0.8rem;
+    height: 5rem;
+    border: solid #ffc000 1px;
+    padding: 0.5rem;
+    text-decoration: none;
+    margin: 1rem 0;
+}
+
+
+.suggestion a:hover {
+    background-color: #fff9e8;
+}
+
+.suggestion a:hover .link_card {
+    background-color: #fff9e8;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(./linkcard.png);
+}
+
+.link_text {
+    height: 5rem;
+    font-weight: bold;
+    color: #484848;
+    vertical-align: middle;
+    width: 100%;
+    padding: auto;
+    text-decoration: none;
+}
+
+
+.link_card {
+    content: '';
+    background-image: url(./linkcard.png);
+    background-size: 100%;
+    border-radius: 0.5rem;
+    height: 5rem;
+    aspect-ratio: 16 / 9;
+    margin-right: 1rem;
+}
+
+.ex {
+    width: calc(100%-1.6rem);
+    background: #f4f8ff;
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.5rem;
+}
+
+.ex p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.pona::before {
+    background-image: url(./pona.svg);
+}
+
+.ike::before {
+    background-image: url(./ike.svg);
+}
+
+.nasa::before {
+    background-image: url(./nasa.svg);
+}
+
+.check a::before {
+    background-image: url(./link.svg);
+}
+
+.nijon {
+    color: #77b;
+}
+
+h1 {
+    color: #9c936f;
+}
+
+p {
+    line-height: 1.8rem;
+    text-align: justify;
+
+}
+
+
+h3 {
+    position: relative;
+    left: 1.5em;
+    font-size: 1rem;
+}
+
+h3::before {
+    content: '';
+    display: inline-block;
+    aspect-ratio: 1 / 1;
+    height: 80%;
+    top: 10%;
+    left: -1.5em;
+    position: absolute;
+    background-image: url(./check.svg);
+    background-size: 100%;
+    background-position-y: bottom;
+    line-height: normal;
+    margin-right: 0.3em;
+}
+
+em {
+    font-style: normal;
+    font-weight: bold;
+}
+
+.pona em {
+    color: #a5ae4e;
+}
+
+.ike em {
+    color: #b86643;
+}
+
+.nasa em {
+    color: #617589;
+}
+
+@media screen and (max-width: 599px) {
+
+    h1 {
+        font-size: 1.5rem;
+        margin-top: 7rem;
+        margin-bottom: 5rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
